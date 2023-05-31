@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="your.name.here.speedtest">
+    package="com.fdossena.speedtest">
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,7 @@
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:launchMode="singleTop"
             android:resizeableActivity="false"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,5 +22,6 @@
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

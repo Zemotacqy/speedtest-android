@@ -1,0 +1,10 @@
+{
+  "devices": ["Samsung Galaxy Tab S8-12.0"],
+  "project": "SpeedTest",
+  "networkLogs": "true",
+  "deviceLogs": "true",
+  "video": "true",
+  "singleRunnerInvocation": "true",
+  "debugscreenshots": "true",
+  "coverage": "true"
+} 
