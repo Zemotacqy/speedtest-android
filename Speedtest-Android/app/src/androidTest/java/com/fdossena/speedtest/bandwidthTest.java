@@ -41,6 +41,8 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @EvenMarker
+    @PrimeMarker
     @Test
     public void speedTest2() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -53,6 +55,7 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @PrimeMarker
     @Test
     public void speedTest3() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -65,6 +68,8 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @EvenMarker
+    @CompositeMarker
     @Test
     public void speedTest4() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -77,6 +82,7 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @PrimeMarker
     @Test
     public void speedTest5() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -89,6 +95,8 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @EvenMarker
+    @CompositeMarker
     @Test
     public void speedTest6() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -101,6 +109,7 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @PrimeMarker
     @Test
     public void speedTest7() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -113,6 +122,8 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @EvenMarker
+    @CompositeMarker
     @Test
     public void speedTest8() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -125,6 +136,7 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @CompositeMarker
     @Test
     public void speedTest9() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
@@ -137,6 +149,8 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
+    @EvenMarker
+    @CompositeMarker
     @Test
     public void speedTest10() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
