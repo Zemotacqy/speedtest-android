@@ -68,91 +68,9 @@ public class bandwidthTest {
         assertEquals("0", "0");
     }
 
-    @EvenMarker
-    @CompositeMarker
-    @Test
-    public void speedTest4() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
-    @PrimeMarker
-    @Test
-    public void speedTest5() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
-    @EvenMarker
-    @CompositeMarker
-    @Test
-    public void speedTest6() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
-    @PrimeMarker
-    @Test
-    public void speedTest7() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
-    @EvenMarker
-    @CompositeMarker
-    @Test
-    public void speedTest8() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
     @CompositeMarker
     @Test
     public void speedTest9() throws InterruptedException {
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
-        Thread.sleep(20000);
-        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
-        onView(withId(R.id.start)).perform(click());
-        Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
-        assertEquals("0", "0");
-    }
-
-    @EvenMarker
-    @CompositeMarker
-    @Test
-    public void speedTest10() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
         NativeScreenshot.capture("home-screen");
         Thread.sleep(20000);
