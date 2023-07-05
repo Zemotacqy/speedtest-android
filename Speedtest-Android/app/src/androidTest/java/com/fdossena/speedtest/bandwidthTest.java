@@ -50,12 +50,10 @@ public class bandwidthTest {
     @Test
     public void speedTest1() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
         Thread.sleep(20000);
         Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
         onView(withId(R.id.start)).perform(click());
         Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
         assertEquals("0", "0");
     }
 
@@ -64,18 +62,16 @@ public class bandwidthTest {
     @Test
     public void speedTest2() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
         Thread.sleep(20000);
         Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
         onView(withId(R.id.start)).perform(click());
         Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
         assertEquals("0", "0");
     }
 
     @PrimeMarker
     @Test
-    public void speedTest3() throws InterruptedException {
+    public void speedTestWithNativeScreenshot() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
         NativeScreenshot.capture("home-screen");
         Thread.sleep(20000);
@@ -90,12 +86,21 @@ public class bandwidthTest {
     @Test
     public void speedTest9() throws InterruptedException {
         Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
-        NativeScreenshot.capture("home-screen");
         Thread.sleep(20000);
         Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
         onView(withId(R.id.start)).perform(click());
         Thread.sleep(50000);
-        NativeScreenshot.capture("speed-screen");
         assertEquals("0", "0");
+    }
+
+    @CompositeMarker
+    @Test
+    public void speedTestFailTest() throws InterruptedException {
+        Log.d(TAG, "[" + System.currentTimeMillis() + "] test started");
+        Thread.sleep(20000);
+        Log.d(TAG, "[" + System.currentTimeMillis() + "] Clicked on start");
+        onView(withId(R.id.start)).perform(click());
+        Thread.sleep(50000);
+        assertEquals("0", "1");
     }
 }
