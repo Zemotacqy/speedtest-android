@@ -29,7 +29,14 @@ jacoco {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    App Center Deps
+    def appCenterSdkVersion = '5.0.0'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
     androidTestImplementation "androidx.test:runner:1.5.2"
     androidTestImplementation "androidx.test:rules:1.5.0"
     androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+    androidTestImplementation('com.microsoft.appcenter:espresso-test-extension:1.4')
 }

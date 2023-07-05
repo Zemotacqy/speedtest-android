@@ -14,6 +14,12 @@ import androidx.test.filters.MediumTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.After;
+import com.microsoft.appcenter.espresso.Factory;
+import com.microsoft.appcenter.espresso.ReportHelper;
+
 import com.fdossena.speedtest.ui.MainActivity;
 
 import org.junit.Rule;
@@ -28,6 +34,18 @@ public class bandwidthTest {
     @Rule
     public ActivityTestRule<MainActivity> activityRule =
             new ActivityTestRule<MainActivity>(MainActivity.class);
+
+    @Rule
+    public ReportHelper reportHelper = Factory.getReportHelper();
+
+    @Before
+    public void SetupPhase(){
+        reportHelper.label("Starting App " + System.currentTimeMillis());
+    }
+    @After
+    public void TearDown(){
+        reportHelper.label("Stopping App " +  System.currentTimeMillis());
+    }
 
     @Test
     public void speedTest1() throws InterruptedException {
