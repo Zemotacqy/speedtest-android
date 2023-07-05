@@ -11,5 +11,5 @@
             android:value="com.fdossena.speedtest.CustomListener"/>
     </instrumentation>
 
-    <application tools:replace="label" android:label="SpeedTestSuite" />
+    <application tools:replace="label" android:label="SpeedTestSuite" android:fullBackupContent="@xml/appcenter_backup_rule" />
 </manifest>
