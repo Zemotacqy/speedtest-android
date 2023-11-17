@@ -25,9 +25,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @MediumTest
-@bandwidthTestAnnotation
+@dupBandwidthTestAnnotation
 @RunWith(AndroidJUnit4.class)
-public class bandwidthTest {
+public class dupBandwidthTest {
 
     public String TAG = "bandwidthTest";
     @Rule
