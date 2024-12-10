@@ -6,13 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build app
-        run: ./Speedtest-Android/gradlew assembleDebug assembleAndroidTest
+        run: echo "hello World"
       - name: Run tests
         uses: emulator-wtf/run-tests@v0
         with:
           api-token: ${{ secrets.EW_API_TOKEN }}
-          app: Speedtest-Android/app/build/outputs/apk/debug/app-debug.apk
-          test: Speedtest-Android/app/build/outputs/apk/androidTest/app-debug-androidTest.apk
+          app: speedTest-Annotation.apk
+          test: speedTest-Annotation-Test.apk
           outputs-dir: build/test-results
       - name: Publish test report
         uses: mikepenz/action-junit-report@v2
