@@ -10,8 +10,8 @@ jobs:
         with:
           api-token: ${{ secrets.EW_API_TOKEN }}
           record-video: true
-          app: ./speedTest-Annotation.apk
-          test: ./speedTest-Annotation-Test.apk
+          app: ./nowinandroid.apk
+          test: ./nowinandroid-androidTest.apk
           outputs-dir: build/test-results
       - name: Publish test report
         uses: mikepenz/action-junit-report@v2
